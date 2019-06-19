@@ -25,6 +25,7 @@ class App extends Component {
         <Placeholder>
           <Placeholder.Paragraph />
         </Placeholder>
+        <p className="App-bottom">*Please don't take this seriously</p>
       </div>
     );
   }

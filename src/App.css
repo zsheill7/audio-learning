@@ -22,6 +22,14 @@
   font-size: large;
 }
 
+.App-bottom {
+  font-size: large;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -6,7 +6,8 @@ const options = [
   { key: 2, text: 'Bexley', value: 2 },
   { key: 3, text: '10-250', value: 3 },
   { key: 4, text: 'Maseeh Dining', value: 4 },
-  { key: 5, text: 'Lobby 10', value: 5 }
+  { key: 5, text: 'Lobby 10', value: 5 },
+  { key: 5, text: 'EC Courtyard', value: 6 }
 ];
 
 class LocationDropdown extends React.Component {

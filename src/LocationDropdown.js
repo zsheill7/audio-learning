@@ -2,14 +2,14 @@ import React from 'react';
 import { Dropdown, Menu } from 'semantic-ui-react';
 
 const options = [
-  { key: 1, text: 'Fire', value: 1 },
-  { key: 2, text: 'Panic', value: 2 },
-  { key: 3, text: 'NR', value: 3 },
-  { key: 4, text: 'Prefrosh', value: 4 },
-  { key: 5, text: 'Earthquake', value: 5 }
+  { key: 1, text: 'The Green Building', value: 1 },
+  { key: 2, text: 'Bexley', value: 2 },
+  { key: 3, text: '10-250', value: 3 },
+  { key: 4, text: 'Maseeh Dining', value: 4 },
+  { key: 5, text: 'Lobby 10', value: 5 }
 ];
 
-class IncidentDropdown extends React.Component {
+class LocationDropdown extends React.Component {
   constructor(props) {
     super(props);
     // Don't call this.setState() here!
@@ -36,4 +36,4 @@ class IncidentDropdown extends React.Component {
   }
 }
 
-export default IncidentDropdown;
+export default LocationDropdown;

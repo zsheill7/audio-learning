@@ -1,0 +1,22 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t zsheill/audio-learning -f Dockerfile.dev .
+
+script:
+  - docker run zsheill/audio-learning npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-2"
+  app: "audio-learning"
+  env: "AudioLearning-env"
+  bucket_name: "elasticbeanstalk-us-west-2-373404038041"
+  bucket_path: "audio-learning"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"

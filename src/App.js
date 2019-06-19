@@ -25,12 +25,6 @@ class App extends Component {
         <Placeholder>
           <Placeholder.Paragraph />
         </Placeholder>
-        <p className="App-intro">
-          *Note: this website is not an actual emergency management system and
-          should not ever be used to know about actual emergencies around
-          campus. It is not in any way affiliated with the MIT Emergency
-          Management Office or really MIT at all. Please don't sue me
-        </p>
       </div>
     );
   }
